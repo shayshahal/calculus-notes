@@ -1,0 +1,353 @@
+{
+  "nodes": [
+    {
+      "id": "group-defs",
+      "type": "group",
+      "x": -600,
+      "y": -450,
+      "width": 400,
+      "height": 480,
+      "color": "4",
+      "label": "DEFINITIONS - הגדרות"
+    },
+    {
+      "id": "group-tests",
+      "type": "group",
+      "x": -150,
+      "y": -450,
+      "width": 600,
+      "height": 820,
+      "color": "5",
+      "label": "CONVERGENCE TESTS - מבחני התכנסות"
+    },
+    {
+      "id": "group-special",
+      "type": "group",
+      "x": 500,
+      "y": -450,
+      "width": 350,
+      "height": 520,
+      "color": "2",
+      "label": "SPECIAL SERIES - טורים מיוחדים"
+    },
+    {
+      "id": "title",
+      "type": "text",
+      "x": -50,
+      "y": -600,
+      "width": 400,
+      "height": 100,
+      "color": "5",
+      "text": "# Series Convergence - התכנסות טורים\n\n**שאלה נפוצה:** עבור אילו x הטור מתכנס?"
+    },
+    {
+      "id": "def-series",
+      "type": "file",
+      "x": -570,
+      "y": -410,
+      "width": 340,
+      "height": 70,
+      "file": "Def - טור.md"
+    },
+    {
+      "id": "def-conv",
+      "type": "file",
+      "x": -570,
+      "y": -330,
+      "width": 340,
+      "height": 70,
+      "file": "Def - התכנסות טור.md"
+    },
+    {
+      "id": "def-abs",
+      "type": "file",
+      "x": -570,
+      "y": -250,
+      "width": 340,
+      "height": 70,
+      "file": "Def - התכנסות בהחלט.md"
+    },
+    {
+      "id": "def-cond",
+      "type": "file",
+      "x": -570,
+      "y": -170,
+      "width": 340,
+      "height": 70,
+      "file": "Def - התכנסות בתנאי.md"
+    },
+    {
+      "id": "thm-abs-implies",
+      "type": "file",
+      "x": -570,
+      "y": -90,
+      "width": 340,
+      "height": 100,
+      "file": "Thm - התכנסות בהחלט גוררת התכנסות.md"
+    },
+    {
+      "id": "decision-start",
+      "type": "text",
+      "x": -120,
+      "y": -410,
+      "width": 250,
+      "height": 80,
+      "color": "1",
+      "text": "## איזה מבחן להשתמש?\n\nהתחל כאן ↓"
+    },
+    {
+      "id": "test-zero",
+      "type": "text",
+      "x": -120,
+      "y": -320,
+      "width": 250,
+      "height": 100,
+      "color": "3",
+      "text": "**שלב 1: תנאי הכרחי**\nהאם aₙ → 0?\n\nאם לא → מתבדר!"
+    },
+    {
+      "id": "test-compare",
+      "type": "file",
+      "x": -120,
+      "y": -210,
+      "width": 250,
+      "height": 80,
+      "file": "Thm - מבחן ההשוואה הרגיל.md"
+    },
+    {
+      "id": "test-compare-limit",
+      "type": "file",
+      "x": -120,
+      "y": -120,
+      "width": 250,
+      "height": 80,
+      "file": "Thm - מבחן ההשוואה הגבולי.md"
+    },
+    {
+      "id": "test-ratio",
+      "type": "file",
+      "x": 160,
+      "y": -320,
+      "width": 250,
+      "height": 80,
+      "file": "Thm - מבחן המנה.md"
+    },
+    {
+      "id": "test-root",
+      "type": "file",
+      "x": 160,
+      "y": -230,
+      "width": 250,
+      "height": 80,
+      "file": "Thm - מבחן השורש.md"
+    },
+    {
+      "id": "test-condensation",
+      "type": "file",
+      "x": 160,
+      "y": -140,
+      "width": 250,
+      "height": 80,
+      "file": "Thm - מבחן העיבוי.md"
+    },
+    {
+      "id": "test-dirichlet",
+      "type": "file",
+      "x": -120,
+      "y": -30,
+      "width": 250,
+      "height": 80,
+      "file": "Thm - מבחן דיריכלה.md"
+    },
+    {
+      "id": "test-abel",
+      "type": "file",
+      "x": -120,
+      "y": 60,
+      "width": 250,
+      "height": 80,
+      "file": "Thm - מבחן אבל.md"
+    },
+    {
+      "id": "when-to-use",
+      "type": "text",
+      "x": 160,
+      "y": -50,
+      "width": 250,
+      "height": 360,
+      "color": "5",
+      "text": "## מתי להשתמש במה:\n\n**מנה/שורש:**\nיש n!, aⁿ, nⁿ\n\n**השוואה:**\nיש 1/nᵖ או דומה\n\n**עיבוי:**\nf(n) מונוטונית יורדת\n\n**דיריכלה/אבל:**\nטור מתחלף\nמכפלה aₙbₙ"
+    },
+    {
+      "id": "thm-cauchy-series",
+      "type": "file",
+      "x": -120,
+      "y": 150,
+      "width": 250,
+      "height": 80,
+      "file": "Thm - קריטריון קושי לטורים.md"
+    },
+    {
+      "id": "warning",
+      "type": "text",
+      "x": -120,
+      "y": 240,
+      "width": 250,
+      "height": 130,
+      "color": "1",
+      "text": "**⚠️ טעות נפוצה:**\n\naₙ → 0 **לא גורר**\nשהטור מתכנס!\n\n**דוגמה נגדית:**\nטור הרמוני Σ1/n"
+    },
+    {
+      "id": "harmonic",
+      "type": "file",
+      "x": 530,
+      "y": -410,
+      "width": 290,
+      "height": 80,
+      "color": "1",
+      "file": "Def - הטור ההרמוני.md"
+    },
+    {
+      "id": "geometric",
+      "type": "file",
+      "x": 530,
+      "y": -320,
+      "width": 290,
+      "height": 80,
+      "file": "Def - טור הנדסי.md"
+    },
+    {
+      "id": "telescopic",
+      "type": "file",
+      "x": 530,
+      "y": -230,
+      "width": 290,
+      "height": 80,
+      "file": "Def - טור טלסקופי.md"
+    },
+    {
+      "id": "p-series",
+      "type": "file",
+      "x": 530,
+      "y": -140,
+      "width": 290,
+      "height": 80,
+      "file": "Thm - התכנסות טור p.md"
+    },
+    {
+      "id": "power-series",
+      "type": "file",
+      "x": 530,
+      "y": -50,
+      "width": 290,
+      "height": 80,
+      "file": "Def - טור חזקות.md"
+    },
+    {
+      "id": "exam-q",
+      "type": "text",
+      "x": 500,
+      "y": 50,
+      "width": 350,
+      "height": 280,
+      "color": "3",
+      "text": "## שאלת מבחן אופיינית:\n\n**עבור אילו x מתכנס:**\nΣ ((-1)ⁿxⁿ√n) / n!\n\n**פתרון:**\n1. מבחן מנה → |x| < ∞\n2. לכן מתכנס לכל x ∈ ℝ\n\n**שים לב:** הn! במכנה\nמנצח כמעט תמיד!"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e01",
+      "fromNode": "decision-start",
+      "toNode": "test-zero",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "1"
+    },
+    {
+      "id": "e02",
+      "fromNode": "test-zero",
+      "toNode": "test-compare",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "כן, aₙ→0"
+    },
+    {
+      "id": "e03",
+      "fromNode": "test-zero",
+      "toNode": "test-ratio",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "יש n! או aⁿ"
+    },
+    {
+      "id": "e04",
+      "fromNode": "test-compare",
+      "toNode": "test-compare-limit",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e05",
+      "fromNode": "test-compare-limit",
+      "toNode": "test-dirichlet",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e06",
+      "fromNode": "test-dirichlet",
+      "toNode": "test-abel",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e07",
+      "fromNode": "test-ratio",
+      "toNode": "test-root",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e08",
+      "fromNode": "test-root",
+      "toNode": "test-condensation",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e09",
+      "fromNode": "def-abs",
+      "toNode": "thm-abs-implies",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e10",
+      "fromNode": "harmonic",
+      "toNode": "warning",
+      "fromSide": "left",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "color": "1",
+      "label": "דוגמה נגדית!"
+    },
+    {
+      "id": "e11",
+      "fromNode": "p-series",
+      "toNode": "test-compare",
+      "fromSide": "left",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "label": "השוואה ל-"
+    }
+  ]
+}

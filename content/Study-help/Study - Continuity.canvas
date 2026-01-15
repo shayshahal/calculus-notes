@@ -1,0 +1,34 @@
+{
+	"nodes":[
+		{"id":"group-uniform","type":"group","x":-70,"y":-400,"width":450,"height":1060,"color":"1","label":"UNIFORM CONTINUITY - רציפות במ\"ש (בונוס!)"},
+		{"id":"group-theorems","type":"group","x":440,"y":-400,"width":360,"height":940,"color":"2","label":"KEY THEOREMS - משפטים מרכזיים"},
+		{"id":"group-basic","type":"group","x":-500,"y":-400,"width":380,"height":600,"color":"4","label":"BASIC CONTINUITY - רציפות רגילה"},
+		{"id":"title","type":"text","text":"# Continuity - רציפות\n\n**רציפות במידה שווה = שאלת בונוס (7 נק')!**","x":-50,"y":-550,"width":450,"height":100,"color":"2"},
+		{"id":"def-cont","type":"file","file":"Def - רציפות נקודתית.md","x":-470,"y":-360,"width":320,"height":60},
+		{"id":"def-cont-interval","type":"file","file":"Def - רציפות בקטע.md","x":-470,"y":-290,"width":320,"height":60},
+		{"id":"def-one-sided","type":"file","file":"Def - רציפות חד-צדדית.md","x":-470,"y":-220,"width":320,"height":60},
+		{"id":"def-discont","type":"file","file":"Def - סוגי נקודות אי-רציפות.md","x":-470,"y":-150,"width":320,"height":100},
+		{"id":"def-uniform","type":"file","file":"Def - רציפות במידה שווה.md","x":-40,"y":-360,"width":380,"height":60,"color":"1"},
+		{"id":"uniform-explain","type":"text","text":"## רציפות במידה שווה\n\n**ε-δ הגדרה:**\n∀ε>0 ∃δ>0 **∀x,y∈D:**\n|x-y|<δ ⟹ |f(x)-f(y)|<ε\n\n**ההבדל הקריטי:**\nδ תלוי **רק** ב-ε!\nלא ב-x או y!","x":-40,"y":-290,"width":380,"height":240,"color":"1"},
+		{"id":"thm-ivt","type":"file","file":"Thm - משפט ערך הביניים.md","x":460,"y":-360,"width":320,"height":100},
+		{"id":"thm-cantor","type":"file","file":"Thm - משפט קנטור לרציפות במידה שווה.md","x":-40,"y":500,"width":380,"height":80},
+		{"id":"uniform-test","type":"text","text":"## איך לבדוק רציפות במ\"ש:\n\n**כן רציפה במ\"ש אם:**\n- קטע סגור וחסום [a,b]\n- פונקציית ליפשיץ\n- |f'(x)| חסומה\n\n**לא רציפה במ\"ש אם:**\n- יש סדרות xₙ,yₙ עם\n  xₙ-yₙ→0 אבל f(xₙ)-f(yₙ)↛0\n- f לא חסומה בקטע פתוח","x":-40,"y":140,"width":380,"height":340,"color":"3"},
+		{"id":"thm-lip-uniform","type":"file","file":"Thm - ליפשיץ גוררת רציפות במידה שווה.md","x":-40,"y":20,"width":380,"height":90},
+		{"id":"def-lipschitz","type":"file","file":"Def - פונקציית ליפשיץ.md","x":-40,"y":-40,"width":380,"height":50},
+		{"id":"exam-bonus","type":"text","text":"## שאלות בונוס אופייניות:\n\n**1.** f(x)=1+sin²(x)/x² על (0,∞)\nרציפה במ\"ש? **כן**\n\n**2.** f(x)=sin(x²) על (0,∞)\nרציפה במ\"ש? **לא**\nהוכחה: xₙ=√(nπ), yₙ=√(nπ+π/2)\n\n**3.** tan(x)=x יש אינסוף\nפתרונות - **הוכח!**","x":460,"y":240,"width":320,"height":280,"color":"1"},
+		{"id":"dense-explain","type":"text","text":"**דפוס מבחן:**\nA⊂ℝ צפופה, f,g רציפות\nf(x)=g(x) לכל x∈A\n⟹ f(x)=g(x) לכל x∈ℝ\n\n**הוכחה:** היינה על\nסדרה מ-A שמתכנסת\nלנקודה ב-ℝ\\A","x":460,"y":-15,"width":320,"height":215,"color":"2"},
+		{"id":"thm-dense","type":"file","file":"Thm - אפיון קבוצה צפופה.md","x":460,"y":-160,"width":320,"height":100},
+		{"id":"thm-weier","type":"file","file":"Thm - משפט ויירשטראס.md","x":460,"y":-250,"width":320,"height":60},
+		{"id":"cont-explain","type":"text","text":"**ε-δ הגדרה:**\n∀ε>0 ∃δ>0:\n|x-x₀|<δ ⟹ |f(x)-f(x₀)|<ε\n\n**שים לב:**\nδ תלוי ב-ε וגם ב-x₀!","x":-470,"y":-15,"width":320,"height":180,"color":"4"}
+	],
+	"edges":[
+		{"id":"e01","fromNode":"def-uniform","fromSide":"bottom","toNode":"uniform-explain","toSide":"top","color":"1"},
+		{"id":"e02","fromNode":"def-lipschitz","fromSide":"bottom","toNode":"thm-lip-uniform","toSide":"top"},
+		{"id":"e03","fromNode":"cont-explain","fromSide":"right","toNode":"uniform-explain","toSide":"left","label":"השוואה"},
+		{"id":"e04","fromNode":"def-cont","fromSide":"bottom","toNode":"def-cont-interval","toSide":"top"},
+		{"id":"e05","fromNode":"thm-lip-uniform","fromSide":"bottom","toNode":"uniform-test","toSide":"top"},
+		{"id":"e06","fromNode":"uniform-test","fromSide":"bottom","toNode":"thm-cantor","toSide":"top"},
+		{"id":"e07","fromNode":"thm-ivt","fromSide":"bottom","toNode":"exam-bonus","toSide":"top","label":"שימוש בבונוס"},
+		{"id":"d89defcb1c7130fd","fromNode":"uniform-test","fromSide":"top","toNode":"thm-lip-uniform","toSide":"bottom"}
+	]
+}

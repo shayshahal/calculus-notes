@@ -1,0 +1,38 @@
+{
+	"nodes":[
+		{"id":"group-basics","type":"group","x":-550,"y":-350,"width":400,"height":420,"color":"4","label":"BASICS - יסודות"},
+		{"id":"group-mvt","type":"group","x":-100,"y":-350,"width":500,"height":540,"color":"1","label":"MVT CHAIN - שרשרת משפטים"},
+		{"id":"group-tests","type":"group","x":-550,"y":100,"width":400,"height":360,"color":"2","label":"DERIVATIVE TESTS - מבחני נגזרת"},
+		{"id":"group-exam","type":"group","x":450,"y":-350,"width":350,"height":560,"color":"3","label":"EXAM PATTERNS - דפוסי מבחן"},
+		{"id":"title","type":"text","x":-100,"y":-500,"width":500,"height":120,"color":"1","text":"# Derivatives - נגזרות\n## \"משפט לגרנז' - המשפט הכי חשוב בקורס!\"\n\nזהו הנושא החשוב ביותר למבחן"},
+		{"id":"def-deriv","type":"file","x":-520,"y":-310,"width":340,"height":70,"file":"Def - נגזרת.md"},
+		{"id":"thm-diff-cont","type":"file","x":-520,"y":-230,"width":340,"height":80,"file":"Thm - גזירות גוררת רציפות.md"},
+		{"id":"def-higher","type":"file","x":-520,"y":-140,"width":340,"height":80,"file":"Def - נגזרות מסדר גבוה.md"},
+		{"id":"def-lipschitz","type":"file","x":-520,"y":-50,"width":340,"height":70,"file":"Def - פונקציית ליפשיץ.md"},
+		{"id":"thm-fermat","type":"file","x":-70,"y":-310,"width":200,"height":70,"color":"6","file":"Thm - משפט פרמה.md"},
+		{"id":"thm-rolle","type":"file","x":-70,"y":-230,"width":200,"height":70,"color":"6","file":"Thm - משפט רול.md"},
+		{"id":"thm-lagrange","type":"file","x":-70,"y":-150,"width":200,"height":80,"color":"1","file":"Thm - משפט לגרנז׳.md"},
+		{"id":"thm-cauchy-mvt","type":"file","x":-70,"y":-60,"width":200,"height":70,"color":"6","file":"Thm - משפט קושי.md"},
+		{"id":"thm-darboux","type":"file","x":-70,"y":20,"width":200,"height":70,"color":"6","file":"Thm - משפט דרבו.md"},
+		{"id":"lagrange-explain","type":"text","x":160,"y":-310,"width":220,"height":380,"color":"1","text":"## משפט לגרנז'\n\nאם f רציפה ב-[a,b]\nוגזירה ב-(a,b)\nאז קיימת c ∈ (a,b):\n\n**f'(c) = [f(b)-f(a)]/(b-a)**\n\n---\n**שימושים:**\n1. מציאת c עם f'(c) = k\n2. הוכחת אי-שוויונות\n3. חסמים על פונקציות\n4. קשר f' → התנהגות f"},
+		{"id":"test-first","type":"file","x":-520,"y":140,"width":340,"height":80,"file":"Method - מבחן הנגזרת הראשונה.md"},
+		{"id":"test-second","type":"file","x":-520,"y":230,"width":340,"height":80,"file":"Method - מבחן הנגזרת השנייה.md"},
+		{"id":"def-critical","type":"file","x":-520,"y":320,"width":340,"height":70,"file":"Def - נקודה קריטית.md"},
+		{"id":"extrema-note","type":"text","x":-520,"y":400,"width":340,"height":120,"color":"2","text":"**מציאת קיצון:**\n1. מצא נק' קריטיות: f'(x)=0\n2. בדוק גבולות הקטע\n3. השתמש במבחן נגזרת"},
+		{"id":"exam-pattern1","type":"text","x":480,"y":-310,"width":290,"height":190,"color":"3","text":"## דפוס 1: MVT ישיר\n\n**נתון:** f רציפה ב-[0,2]\nגזירה ב-(0,2)\nf(0)=0, f(1)=2, f(2)=1\n\n**הוכח:** יש c עם f'(c)=-1/2\n\n**פתרון:** MVT על [1,2]"},
+		{"id":"exam-pattern2","type":"text","x":480,"y":-110,"width":290,"height":200,"color":"3","text":"## דפוס 2: אי-שוויון\n\n**נתון:** f'(x) ≥ f(x), f(0)=1\n\n**הוכח:** f(x) ≥ eˣ לכל x≥0\n\n**פתרון:** הגדר g(x)=f(x)/eˣ\nהראה g'(x)≥0\nלכן g עולה, g(0)=1"},
+		{"id":"exam-pattern3","type":"text","x":480,"y":100,"width":290,"height":170,"color":"3","text":"## דפוס 3: f' עם תנאים\n\n**נתון:** 0 ≤ f'(x) ≤ 1\nלכל x ∈ [0,1]\n\n**הוכח:** יש c עם f'(c)=3c²\n\n**רמז:** IVT על g(x)=f'(x)-3x²"}
+	],
+	"edges":[
+		{"id":"e01","fromNode":"thm-fermat","toNode":"thm-rolle","fromSide":"bottom","toSide":"top","toEnd":"arrow","color":"6","label":"דרוש ל-"},
+		{"id":"e02","fromNode":"thm-rolle","toNode":"thm-lagrange","fromSide":"bottom","toSide":"top","toEnd":"arrow","color":"1","label":"מקרה פרטי!"},
+		{"id":"e03","fromNode":"thm-lagrange","toNode":"thm-cauchy-mvt","fromSide":"bottom","toSide":"top","toEnd":"arrow","label":"מקרה פרטי"},
+		{"id":"e04","fromNode":"thm-lagrange","toNode":"thm-darboux","fromSide":"bottom","toSide":"top","toEnd":"arrow"},
+		{"id":"e05","fromNode":"def-deriv","toNode":"thm-diff-cont","fromSide":"bottom","toSide":"top","toEnd":"arrow"},
+		{"id":"e06","fromNode":"thm-lagrange","toNode":"lagrange-explain","fromSide":"right","toSide":"left","toEnd":"arrow","color":"1"},
+		{"id":"e07","fromNode":"thm-fermat","toNode":"def-critical","fromSide":"left","toSide":"right","toEnd":"arrow","label":"משתמש ב-"},
+		{"id":"e08","fromNode":"thm-lagrange","toNode":"exam-pattern1","fromSide":"right","toSide":"left","toEnd":"arrow","color":"3","label":"דוגמה"},
+		{"id":"e09","fromNode":"test-first","toNode":"test-second","fromSide":"bottom","toSide":"top","toEnd":"arrow"},
+		{"id":"e10","fromNode":"def-critical","toNode":"extrema-note","fromSide":"bottom","toSide":"top","toEnd":"arrow"}
+	]
+}

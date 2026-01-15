@@ -1,0 +1,264 @@
+{
+  "nodes": [
+    {
+      "id": "group-basic",
+      "type": "group",
+      "x": -550,
+      "y": -400,
+      "width": 400,
+      "height": 540,
+      "color": "4",
+      "label": "BASICS - יסודות"
+    },
+    {
+      "id": "group-cauchy",
+      "type": "group",
+      "x": -100,
+      "y": -400,
+      "width": 450,
+      "height": 720,
+      "color": "1",
+      "label": "CAUCHY - קושי (חשוב מאוד!)"
+    },
+    {
+      "id": "group-partial",
+      "type": "group",
+      "x": 400,
+      "y": -400,
+      "width": 350,
+      "height": 540,
+      "color": "2",
+      "label": "PARTIAL LIMITS - גבולות חלקיים"
+    },
+    {
+      "id": "title",
+      "type": "text",
+      "x": -100,
+      "y": -550,
+      "width": 450,
+      "height": 100,
+      "color": "5",
+      "text": "# Sequences - סדרות\n\n**קריטריון קושי = שאלת \"הגדר והוכח\" במבחן!**"
+    },
+    {
+      "id": "def-seq",
+      "type": "file",
+      "x": -520,
+      "y": -360,
+      "width": 340,
+      "height": 70,
+      "file": "Def - סדרה.md"
+    },
+    {
+      "id": "def-conv",
+      "type": "file",
+      "x": -520,
+      "y": -280,
+      "width": 340,
+      "height": 70,
+      "file": "Def - סדרה מתכנסת.md"
+    },
+    {
+      "id": "def-limit",
+      "type": "file",
+      "x": -520,
+      "y": -200,
+      "width": 340,
+      "height": 70,
+      "file": "Def - גבול של סדרה.md"
+    },
+    {
+      "id": "def-bounded",
+      "type": "file",
+      "x": -520,
+      "y": -120,
+      "width": 340,
+      "height": 70,
+      "file": "Def - סדרה חסומה.md"
+    },
+    {
+      "id": "def-mono",
+      "type": "file",
+      "x": -520,
+      "y": -40,
+      "width": 340,
+      "height": 70,
+      "file": "Def - סדרה מונוטונית.md"
+    },
+    {
+      "id": "thm-arith",
+      "type": "file",
+      "x": -520,
+      "y": 40,
+      "width": 340,
+      "height": 80,
+      "file": "Thm - אריתמטיקת גבולות.md"
+    },
+    {
+      "id": "cauchy-def",
+      "type": "file",
+      "x": -70,
+      "y": -360,
+      "width": 380,
+      "height": 80,
+      "color": "1",
+      "file": "Def - סדרת קושי.md"
+    },
+    {
+      "id": "cauchy-thm",
+      "type": "file",
+      "x": -70,
+      "y": -270,
+      "width": 380,
+      "height": 90,
+      "color": "1",
+      "file": "Thm - שקילות התכנסות וקושי.md"
+    },
+    {
+      "id": "cauchy-explain",
+      "type": "text",
+      "x": -70,
+      "y": -170,
+      "width": 380,
+      "height": 230,
+      "color": "1",
+      "text": "## קריטריון קושי\n\n**הגדרה:** (aₙ) סדרת קושי אם:\n∀ε>0 ∃N∈ℕ ∀n,m>N: |aₙ-aₘ|<ε\n\n**משפט:**\n(aₙ) מתכנסת ⟺ (aₙ) קושי\n\n---\n**זה מופיע בכל מבחן!**\nדע להגדיר ולהוכיח."
+    },
+    {
+      "id": "cauchy-conv",
+      "type": "file",
+      "x": -70,
+      "y": 70,
+      "width": 380,
+      "height": 80,
+      "file": "Thm - סדרה מתכנסת היא סדרת קושי.md"
+    },
+    {
+      "id": "cauchy-bounded",
+      "type": "file",
+      "x": -70,
+      "y": 160,
+      "width": 380,
+      "height": 80,
+      "file": "Lemma - סדרת קושי חסומה.md"
+    },
+    {
+      "id": "proof-sketch",
+      "type": "text",
+      "x": -70,
+      "y": 250,
+      "width": 380,
+      "height": 200,
+      "color": "3",
+      "text": "## מתווה הוכחה (קושי⟹מתכנסת):\n\n1. קושי ⟹ חסומה\n2. B-W ⟹ יש תת-סדרה מתכנסת\n3. קושי + תת-סדרה מתכנסת\n   ⟹ הסדרה עצמה מתכנסת\n\n**דע את כל השלבים!**"
+    },
+    {
+      "id": "partial-def",
+      "type": "file",
+      "x": 430,
+      "y": -360,
+      "width": 290,
+      "height": 80,
+      "file": "Def - גבול חלקי.md"
+    },
+    {
+      "id": "partial-sup",
+      "type": "file",
+      "x": 430,
+      "y": -270,
+      "width": 290,
+      "height": 80,
+      "file": "Def - גבול עליון.md"
+    },
+    {
+      "id": "partial-inf",
+      "type": "file",
+      "x": 430,
+      "y": -180,
+      "width": 290,
+      "height": 80,
+      "file": "Def - גבול תחתון.md"
+    },
+    {
+      "id": "bw",
+      "type": "file",
+      "x": 430,
+      "y": -90,
+      "width": 290,
+      "height": 80,
+      "file": "Thm - בולצאנו-ויירשטראס.md"
+    },
+    {
+      "id": "partial-exam",
+      "type": "text",
+      "x": 430,
+      "y": 0,
+      "width": 290,
+      "height": 180,
+      "color": "3",
+      "text": "**שאלת בונוס אופיינית:**\n\nמצא סדרה (aₙ) כך ש:\nPL(aₙ) = ℕ ∪ {∞}\n\n**פתרון:**\n1,1,2,1,2,3,1,2,3,4,..."
+    }
+  ],
+  "edges": [
+    {
+      "id": "e01",
+      "fromNode": "cauchy-def",
+      "toNode": "cauchy-thm",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "1"
+    },
+    {
+      "id": "e02",
+      "fromNode": "cauchy-thm",
+      "toNode": "cauchy-explain",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "1"
+    },
+    {
+      "id": "e03",
+      "fromNode": "cauchy-explain",
+      "toNode": "proof-sketch",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e04",
+      "fromNode": "bw",
+      "toNode": "proof-sketch",
+      "fromSide": "left",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "label": "משמש ב-"
+    },
+    {
+      "id": "e05",
+      "fromNode": "def-bounded",
+      "toNode": "bw",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "תנאי ל-"
+    },
+    {
+      "id": "e06",
+      "fromNode": "def-conv",
+      "toNode": "def-limit",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e07",
+      "fromNode": "cauchy-bounded",
+      "toNode": "proof-sketch",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "toEnd": "arrow"
+    }
+  ]
+}
